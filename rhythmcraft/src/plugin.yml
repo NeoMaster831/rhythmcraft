@@ -1,0 +1,8 @@
+main: com.github.neomaster.rhythmcraft.main.Startup
+name: rhythmcraft
+version: 1.0
+api-version: 1.16
+
+commands:
+  rc:
+    description: dum-chit-dum-chit
