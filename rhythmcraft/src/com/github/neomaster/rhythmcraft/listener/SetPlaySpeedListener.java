@@ -25,19 +25,12 @@ public class SetPlaySpeedListener implements Listener {
 
             if (GamePlayVariables.isSettingSpeed.get(i).equals(p)) {
 
-                if (e.getMessage() == "back") {
-                    GamePlayVariables.isSettingSpeed.get(i).remove();
-                    p.sendMessage(ChatUtils.regularCodeChat("&c취소하였습니다."));
-                    e.setCancelled(true);
-                    return;
-                }
-
                 GamePlayVariables.PlaySpeed.remove(p);
                 GamePlayVariables.PlaySpeed.put(p, Double.parseDouble(e.getMessage()));
 
                 GamePlayVariables.isSettingSpeed.get(i).remove();
                 p.sendMessage(ChatUtils.chat("설정이 완료 되었습니다. [" + e.getMessage() + "]", "#00FF00"));
-
+                // 잘 되었다고는 하나, 그 다음에 채팅 메시지를 보낼 수 없음
             }
 
         }

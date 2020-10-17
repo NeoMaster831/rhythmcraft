@@ -45,7 +45,7 @@ public class GameStartClicked implements Listener {
             else if (e.getCurrentItem().getType().equals(Material.CRACKED_POLISHED_BLACKSTONE_BRICKS)) { // Set Speed
 
                 e.getWhoClicked().closeInventory();
-                e.getWhoClicked().sendMessage(ChatUtils.chat("10초 동안 플레이 스피드를 입력해 주세요. [\"back\" = 취소]", "#00FF00"));
+                e.getWhoClicked().sendMessage(ChatUtils.chat("10초 동안 플레이 스피드를 입력해 주세요.", "#00FF00"));
                 GamePlayVariables.isSettingSpeed.add((Player)e.getWhoClicked());
 
                 Bukkit.getScheduler().scheduleSyncDelayedTask(Bukkit.getPluginManager().getPlugin("rhythmcraft"), new Runnable() { // 10초간 기다린 뒤 실행
