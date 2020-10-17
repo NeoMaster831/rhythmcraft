@@ -6,3 +6,6 @@
 ~~웬만하면 버그도 좀....~~
 
 **INTELLIJ IDEA PROJECT**
+
+> SpigotMC 1.16.3 기반 플러그인
+> https://spigotmc.org/
